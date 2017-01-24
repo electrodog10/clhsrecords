@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<school_records>
+    <record>
+        <name>bob</name>
+        <activity>soccer</activity>
+        <title>goal kicking</title>
+        <numvalue>65 goals</numvalue>
+        <year>2015</year>
+    </record>
+
+    <record>
+        <name>trinity</name>
+        <activity>swimming</activity>
+        <title>number of dives</title>
+        <numvalue>100 dives</numvalue>
+        <year>2015</year>
+    </record>
+
+    <record>
+        <name>thom</name>
+        <activity>football</activity>
+        <title>most touchdowns</title>
+        <numvalue>100,000 touchdowns</numvalue>
+        <year>1986</year>
+    </record>
+
+    <record>
+        <name>carson</name>
+        <activity>band</activity>
+        <title>number of hits on drum </title>
+        <numvalue>1,000 times</numvalue>
+        <year>2015</year>
+    </record>
+
+    <record>
+        <name>lewis</name>
+        <activity>physical education</activity>
+        <title>most pe makeups in one day</title>
+        <numvalue>1,000 times</numvalue>
+        <year>2015</year>
+    </record>
+
+    <record>
+        <name>henry</name>
+        <activity>school website</activity>
+        <title>latest night</title>
+        <numvalue>up until 4:00 am</numvalue>
+        <year>2015</year>
+    </record>
+</school_records>
