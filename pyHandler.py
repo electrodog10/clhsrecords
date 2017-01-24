@@ -31,12 +31,12 @@ while name[x] != "Empty":
     x = x + 1
     addedArrays.append(x)
 #open html file
-with open('/test.html') as f:
-    htmlFile=(f.read())
-print("""\
-Content-Type: text/html\n 
-"""+ htmlFile)# % htmlName)
-#print
+#with open('/test.html') as f:
+#    htmlFile=(f.read())
+#print("""\
+#Content-Type: text/html\n 
+#"#""+ htmlFile)# % htmlName)
+
 print("""\
 Content-Type: text/html\n
 <html>
