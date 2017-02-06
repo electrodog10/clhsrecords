@@ -21,38 +21,10 @@ body {
     padding-top: 25px;
     padding-bottom: 25px;
     padding-left: 10%;
-    height: 18px;
+    height: 20px;
 }
 
-.nav_wrapper {
-    margin: 0 auto;
-    text-align: left;
-}
-
-.search-btn {
-    float: right;
-}
-
-.search-btn a {
-    margin-right: 30px;
-    padding: 8px 18px;
-    border: 1px solid #ffffff;
-}
-
-.search-btn a:active {
-    position: relative;
-    top: 2px;
-}
-
-.class {
-    float: right;
-    margin-right: 30px;
-    position: relative;
-    right: 30px;
-    padding: 20px 18px;
-}
-
-.navigation {
+.footernav {
     background-color: #111111;
     position: fixed;
     bottom: 0;
@@ -71,18 +43,13 @@ body {
     color: #ffffff !important;
 }
 
-.radio {
-    font-family: 'libreFranklin';
-    color: #ffffff;
-}
-
-.navigation li {
+.footernav li {
     text-decoration: color#ffffff;
     padding: 0 10px;
     display: inline;
 }
 
-.navigation ul {
+.footernav ul {
     display: inline;
 }
 
@@ -101,7 +68,7 @@ body {
     bottom: 2px;
 }
 
-nav a {
+.footernav a {
     height: 60px;
     line-height: 60px;
     color: #ffffff;
@@ -114,8 +81,3 @@ nav a {
     display: block;
     margin-top: 70px;
 }
-
-.select {
-    margin-left: 0px;
-}
-Contact GitHub API Training Shop Blog About
