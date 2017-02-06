@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--under the black menu line in large text saying CLHS Records results-->
+    <title>Results</title>
+    <link rel="stylesheet" type="text/css" href="Stylesheet.css">
+    <!--This connects your stylesheet.css to html-->
+</head>
+
+<body>
+    <!--this is the start of your body of the page-->
+    <div class="nav">
+        <!--This is what keeps seachbar in line with your names-->
+        <div class="nav_wrapper">
+            <!--This is what holds the search bar in place-->
+            <form method="get" action="/cgi-bin/process_form.py" />
+            <form class="form-wrapper">
+                <input type="text" name="name" placeholder="Enter Name">
+                <input type="submit" value="Submit">
+            </form>
+
+        </div>
+        <img class="lionimage" width="12%" src="http://clearlakeschools.org/wp-content/uploads/2016/12/Charging-Lion.png" />
+        <p class="page-description">The returned items were "%s"</p>
+        <!--this is the lion image above the title clhs records-->
+        <h1 class="page-title">CLHS Records</h1>
+        <p class="page-description"> ... </p>
+        <!--discription in middle of page describing-->
+        <div class="navigation">
+            <nav>
+                <ul>
+                    <li><a href="#"><b> Clear Lake Athletics </b></a></li>
+                    <li><a href="http://clearlakeschools.org/about/"><b> About Clear Lake District </b></a></li>
+                </ul>
+                <div class="contact-btn">
+                    <a>Contact</a>
+                </div>
+            </nav>
+        </div>
+</body>
+
+</html>

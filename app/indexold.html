@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--under the black menu line in large text saying CLHS Records-->
+    <title>CLHS Records</title>
+    <link rel="stylesheet" type="text/css" href="Stylesheet.css">
+    <!--This connects your stylesheet.css to html-->
+</head>
+
+<body>
+    <!--this is the start of your body of the page-->
+    <div class="nav">
+        <!--This is what keeps seachbar in line with your names-->
+        <div class="nav_wrapper">
+            <!--This is what holds the search bar in place-->
+            <form action="/views" method="POST">
+            <form class="form-wrapper">
+                <input type="text" name="name" placeholder="Enter Name">
+                <input type="radio" name="searchcrit" value="1">Name
+                <input type="radio" name="searchcrit" value="3">Year
+                <input type="radio" name="searchcrit" value="2">Activity
+                <input type="radio" name="searchcrit" value="4">Records
+                <input type="submit" value="Submit!" />
+            </form>
+        </div>
+        <img class="lionimage" width="12%" src="http://clearlakeschools.org/wp-content/uploads/2016/12/Charging-Lion.png" />
+        <!--this is the lion image above the title clhs records-->
+        <h1 class="page-title">CLHS Records</h1>
+        <p class="page-description"> On this webpage you will be able to view record holders over the various years at Clear Lake High school. You will be able to search the file by name,year,activity, and record. </p>
+        <!--discription in middle of page describing-->
+        <div class="navigation">
+            <nav>
+                <ul>
+                    <li><a href="#"><b> Clear Lake Athletics </b></a></li>
+                    <li><a href="http://clearlakeschools.org/about/"><b> About Clear Lake District </b></a></li>
+                </ul>
+                <div class="contact-btn">
+                    <a href="mailto:hluker18@clearlakeschools.org">Contact</a>
+                </div>
+            </nav>
+        </div>
+</body>
+
+</html>

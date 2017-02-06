@@ -1,0 +1,122 @@
+html,
+title {
+    font-family: 'LibreFranklin';
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'LibreFranklin';
+}
+
+.page-title {
+    text-align: center;
+    font-weight: 100;
+}
+
+.page-description {
+    text-align: center;
+}
+
+.nav {
+    background-color: #111111;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    height: 18px;
+}
+
+.nav_wrapper {
+    width: 960px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.search-btn {
+    float: right;
+}
+
+.search-btn a {
+    margin-right: 30px;
+    padding: 8px 18px;
+    border: 1px solid #ffffff;
+}
+
+.search-btn a:active {
+    position: relative;
+    top: 2px;
+}
+
+.class {
+    float: right;
+    margin-right: 30px;
+    position: relative;
+    right: 30px;
+    padding: 20px 18px;
+}
+
+.navigation {
+    background-color: #111111;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+.form-wrapper {
+    margin-right: 30px;
+    float: right;
+    position: relative;
+    padding: 15px;
+    margin-top: -50px;
+    padding-top: 30px;
+    color: #ffffff !important;
+}
+
+.radio {
+    font-family: 'libreFranklin';
+    color: #ffffff;
+}
+
+.navigation li {
+    text-decoration: color#ffffff;
+    padding: 0 10px;
+    display: inline;
+}
+
+.navigation ul {
+    display: inline;
+}
+
+.contact-btn {
+    float: right;
+}
+
+.contact-btn a {
+    margin-right: 30px;
+    padding: 8px 18px;
+    border: 1px solid #ffffff;
+}
+
+.contact-btn a:active {
+    position: relative;
+    bottom: 2px;
+}
+
+nav a {
+    height: 60px;
+    line-height: 60px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.lionimage {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 70px;
+}
+
+.select {
+    margin-left: 0px;
+}
