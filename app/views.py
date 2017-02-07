@@ -27,7 +27,7 @@ def index():
     if request.method == 'POST':
         name = request.form['name']
         print(name)
-        print('bob')
+
     htmlName = name  # form.getfirst('name', 'empty')
     htmlNumber = 1  # form.getvalue('searchcrit')
 

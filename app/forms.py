@@ -20,7 +20,7 @@ def hello():
     if request.method == 'POST':
         name = request.form['name']
         print(name)
-
+        print('bob')
         if form.validate():
             # Save the comment here.
             flash('Hello ' + name)
