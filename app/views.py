@@ -27,7 +27,7 @@ def index():
     if request.method == 'POST':
         name = request.form['name']
         print(name)
-    htmlName = "Carson"  # form.getfirst('name', 'empty')
+    htmlName = name  # form.getfirst('name', 'empty')
     htmlNumber = 1  # form.getvalue('searchcrit')
 
     # htmlName = cgi.escape(htmlName)
@@ -81,9 +81,7 @@ def index():
     user = {'nickname': output}
 
 
-return render_template('index.html',
-                           title='Home',
-                           form=form)
+return render_template('hello.html', form=form)
 
 
 
