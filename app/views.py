@@ -21,12 +21,13 @@ class ReusableForm(Form):
 @app.route('/index')
 def index():
     form = ReusableForm(request.form)
-    print('bob')
+
 
     print(form.errors)
     if request.method == 'POST':
         name = request.form['name']
         print(name)
+        print('bob')
     htmlName = name  # form.getfirst('name', 'empty')
     htmlNumber = 1  # form.getvalue('searchcrit')
 
