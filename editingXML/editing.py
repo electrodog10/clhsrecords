@@ -1,5 +1,5 @@
 import writingscripts #also dependent on the indent.py, must be in the same folder
-#comment
+
 write = int(input("Type 1 for Write, Type 2 for Delete"))
 
 
