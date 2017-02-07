@@ -82,7 +82,7 @@ def index():
     user = {'nickname': output}
 
 
-return render_template('hello.html', form=form)
+return render_template('hello.html', output=output)
 
 
 
