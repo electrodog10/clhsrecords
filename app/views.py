@@ -21,7 +21,7 @@ class ReusableForm(Form):
 @app.route('/index')
 def index():
     form = ReusableForm(request.form)
-
+    print('bob')
 
     print(form.errors)
     if request.method == 'POST':
@@ -86,60 +86,7 @@ return render_template('hello.html', form=form)
 
 
 
-htmlName = "Carson" # form.getfirst('name', 'empty')
-htmlNumber = 1 #form.getvalue('searchcrit')
 
-#htmlName = cgi.escape(htmlName)
-
-# initialize variables
-search = ['blank','name','activity','year','title']
-searchnumber = ['1','2','3','4']
-
-def searchingall (filename):
-    doc = ElementTree.parse(filename)
-    records = doc.findall('record')
-    return (records)
-def display (searchXML,htmlName,htmlNumber,search):
-    displaycounter = -1
-    name = ['None']
-    activity = ['None']
-    record = ['None']
-    num = ['None']
-    year = ['None']
-    
-    for x in searchXML:
-        if htmlName == (x.find(search[int(htmlNumber)]).text):
-            displaycounter = int(displaycounter) + 1
-            name.append(displaycounter)
-            activity.append(displaycounter)
-            record.append(displaycounter)
-            num.append(displaycounter)
-            year.append(displaycounter)
-            name[displaycounter] = x.find('name').text
-            activity[displaycounter] = x.find('activity').text
-            record[displaycounter] = x.find('title').text
-            num[displaycounter] = x.find('numvalue').text
-            year[displaycounter] = x.find('year').text
-    displaycounter = displaycounter + 1
-    name[displaycounter] = "Empty"
-    return(name, activity, record, num, year)
-
-searchXML = searchingall(full_name) #finds all xml entries
-(name, activity, record, num, year) =  display(searchXML,htmlName,int(htmlNumber),search) 
-#all vars coming out of the line above are arrays
-x = 0
-addedArrays = ["None"]
-while name[x] != "Empty":
-    addedArrays[x] = (str(name[x])+ "," + str(activity[x]) +","+ str(record[x]) +","+ str(num[x])+","+ str(year[x]))
-    x = x + 1
-    addedArrays.append(x)
-arrayString = str(addedArrays)
-output =  arrayString.title()
-
-
-
-@app.route('/')
-@app.route('/index')
 
 
 
