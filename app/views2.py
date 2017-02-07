@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 from wtforms import Form, FloatField, validators
-from compute import compute
+import compute
 
 app = Flask(__name__)
 
