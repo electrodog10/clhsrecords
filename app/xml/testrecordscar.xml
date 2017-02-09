@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<school_records>
+  <record>
+    <name>Carson</name>
+    <activity>Extreme Banding</activity>
+    <title>steps in a day</title>
+    <year>1997</year>
+    <numvalue>10,000</numvalue>
+  </record>
+
+
+  <record>
+    <name>Lewis</name>
+    <activity>Dabbing</activity>
+    <title>dabs in a day</title>
+    <year>1997</year>
+    <numvalue>2000</numvalue>
+  </record>
+
+
+  <record>
+    <name>Bill</name>
+    <activity>Football</activity>
+    <title>catches in a game</title>
+    <year>1997</year>
+    <numvalue>134</numvalue>
+  </record>
+</school_records>
