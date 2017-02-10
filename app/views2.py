@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from wtforms import Form, FloatField, validators
+from wtforms import Form, StringField, validators
 from app import compute
 from app import app
 DEBUG = True
@@ -8,7 +8,7 @@ app.config['SECRET_KEY'] = '7d441f27d441f37567d441f2b6176a'
 
 # Model
 class InputForm(Form):
-    r = FloatField(validators=[validators.InputRequired()])
+    r = StringField(validators=[validators.InputRequired()])
 
 # View
 
