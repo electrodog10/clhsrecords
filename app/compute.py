@@ -14,7 +14,7 @@ def compute(r):
     print(r)
     htmlName = r.lower()
     print(htmlName)
-    htmlNumber = 1
+    htmlNumber = 3
 
 
 
@@ -27,12 +27,10 @@ def compute(r):
     print(name, activity, record, num, year) 
     #all vars coming out of the line above are arrays
     x = 0
-    addedArrays = ["None"]
+    addedArrays = ""
     while name[x] != "Empty":
-        addedArrays.append(x)
-        addedArrays[x] = (str(name[x])+ "," + str(activity[x]) +","+ str(record[x]) +","+ str(num[x])+","+ str(year[x]))
+        addedArrays = addedArrays +'<br>'+(str(name[x])+ "," + str(activity[x]) +","+ str(record[x]) +","+ str(num[x])+","+ str(year[x]))+'<br>'
         x = x + 1
-
     r = addedArrays
     print(r)
     return r

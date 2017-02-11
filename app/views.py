@@ -28,7 +28,7 @@ def index():
         name = request.form['name']
         print(name)
 
-    htmlName = name.lower()  # form.getfirst('name', 'empty')
+    htmlName = name  # form.getfirst('name', 'empty')
     htmlNumber = 1  # form.getvalue('searchcrit')
 
     # htmlName = cgi.escape(htmlName)
