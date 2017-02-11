@@ -12,7 +12,7 @@ def compute(r):
     full_name = os.path.abspath(os.path.join('app','xml', file_name))
     # get variables from html 
     print(r)
-    htmlName = r
+    htmlName = r.lower()
     print(htmlName)
     htmlNumber = 1
 
@@ -29,9 +29,10 @@ def compute(r):
     x = 0
     addedArrays = ["None"]
     while name[x] != "Empty":
+        addedArrays.append(x)
         addedArrays[x] = (str(name[x])+ "," + str(activity[x]) +","+ str(record[x]) +","+ str(num[x])+","+ str(year[x]))
         x = x + 1
-        addedArrays.append(x)
+
     r = addedArrays
     print(r)
     return r
