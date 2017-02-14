@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from wtforms import Form, StringField, validators
+from wtforms import Form, StringField, validators, RadioField
 from app import compute
 from app import app
 DEBUG = True
@@ -7,21 +7,28 @@ DEBUG = True
 app.config['SECRET_KEY'] = '7d441f27d441f37567d441f2b6176a'
 
 # Model
-class InputForm(Form):
+class Form(Form):
     r = StringField(validators=[validators.InputRequired()])
+    option = RadioField('Options', choices=[('1','Name'),('2','Activity'),('3','Year'), ('4','Records')])
+
+
 
 # View
 
 @app.route("/", methods=['GET', 'POST'])
 @app.route('/index')
 def index():
-    form = InputForm(request.form)
+    form = Form(request.form)
+
     if request.method == 'POST' and form.validate():
         r = form.r.data
-        s = compute.compute(r)
+        option = form.option.data
+        s = compute.compute(r,option)
         return render_template("view_output.html", form=form, s=s)
     else:
         return render_template("view_input.html", form=form)
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+

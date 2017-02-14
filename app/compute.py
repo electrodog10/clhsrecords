@@ -5,7 +5,7 @@ import os
 from app import display
 from xml.etree import ElementTree
 
-def compute(r):
+def compute(r,option):
     
     #import XML file
     file_name = 'testrecords.xml' 
@@ -14,7 +14,7 @@ def compute(r):
     print(r)
     htmlName = r.lower()
     print(htmlName)
-    htmlNumber = 3
+    htmlNumber = int(option)
 
 
 
