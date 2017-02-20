@@ -29,9 +29,9 @@ def compute(r,option):
     x = 0
     addedArrays = ""
     while name[x] != "Empty":
-        addedArrays = addedArrays +'<br>'+(str(name[x])+ "," + str(activity[x]) +","+ str(record[x]) +","+ str(num[x])+","+ str(year[x]))+'<br>'
+        addedArrays = addedArrays +(str(name[x])+ ", " + str(activity[x]) +", "+ str(record[x]) +", "+ str(num[x])+", "+ str(year[x])) + " "
         x = x + 1
-    r = addedArrays
+    r = addedArrays.title()
     print(r)
     return r
 
