@@ -6,7 +6,7 @@ DEBUG = True
 #app = Flask(__name__)
 app.config['SECRET_KEY'] = '7d441f27d441f37567d441f2b6176a'
 
-# Model
+# Send form
 class Form(Form):
     r = StringField(validators=[validators.InputRequired()])
     option = SelectField('Options', choices=[('1','Name'),('2','Activity'),('3','Year'), ('4','Records')])
