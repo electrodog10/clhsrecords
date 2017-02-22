@@ -8,8 +8,8 @@ from xml.etree import ElementTree
 def compute(r,option):
     
     #import XML file
-    file_name = 'testrecords.xml' 
-    full_name = os.path.abspath(os.path.join('app','xml', file_name))
+    file_name = 'records.xml'
+    full_name = os.path.abspath(os.path.join('recordfiles', file_name))
     # get variables from html 
     print(r)
     htmlName = r.lower()
