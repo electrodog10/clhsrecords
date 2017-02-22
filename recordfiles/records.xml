@@ -1,0 +1,18 @@
+<school_records>
+  <record>
+    <name>Carson</name>
+    <activity>Band</activity>
+    <title>Dabbing</title>
+    <year>2015</year>
+    <numvalue>123545</numvalue>
+    <idnum />
+  </record>
+  <record>
+    <name>Lewis</name>
+    <activity>Codeing</activity>
+    <title>Lines of Code</title>
+    <year>2015</year>
+    <numvalue>21345 Lines</numvalue>
+    <idnum>1</idnum>
+  </record>
+</school_records>
