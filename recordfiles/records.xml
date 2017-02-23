@@ -9,10 +9,26 @@
   </record>
   <record>
     <name>Lewis</name>
-    <activity>Codeing</activity>
+    <activity>Coding</activity>
     <title>Lines of Code</title>
     <year>2015</year>
     <numvalue>21345 Lines</numvalue>
     <idnum>1</idnum>
+  </record>
+  <record>
+    <name>Carter</name>
+    <activity>Dabbing</activity>
+    <title>Dabs in a Row</title>
+    <year>2017</year>
+    <numvalue>1000000</numvalue>
+    <idnum>2</idnum>
+  </record>
+  <record>
+    <name>Michaela Niles  </name>
+    <activity>Dabbing</activity>
+    <title>Dab queen</title>
+    <year>2017</year>
+    <numvalue>2,334</numvalue>
+    <idnum>3</idnum>
   </record>
 </school_records>
