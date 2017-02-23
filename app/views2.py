@@ -2,6 +2,7 @@ from flask import Flask, render_template, request
 from wtforms import Form, StringField, validators, SelectField
 from app import compute
 from app import app
+from flask_table import Table, Col
 DEBUG = True
 #app = Flask(__name__)
 app.config['SECRET_KEY'] = '7d441f27d441f37567d441f2b6176a'
@@ -24,8 +25,9 @@ def index():
         r = form.r.data
         option = form.option.data
         print(option)
-        s = compute.compute(r,option)
-        return render_template("view_output.html", form=form, s=s)
+        table = compute.compute(r,option)
+
+        return render_template("view_output.html", form=form, table=table)
     else:
         return render_template("view_input.html", form=form)
 
