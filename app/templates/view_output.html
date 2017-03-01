@@ -15,17 +15,28 @@
         <!--This is what keeps seachbar in line with your names-->
         <div class="nav_wrapper">
             <!--This is what holds search bar in place-->
+            <div class="navigation">
+
+        </div>
+             <div class="contact-btn">
+                    <a href="{{ url_for('index') }}">Back</a>
+                </div>
             <form method=post action="">
             <form class="form-wrapper">
                 {{ form.r }}
                 {{ form.option (class_="radio-inline") }}
-            
+
+
                 <input type="submit" value="Search!" a href="#" />
+
             </form>
+               <form action="{{ url_for('login') }}">
+    <input type="submit" value="This is a button link">
+</form>
         </div>
         <img class="lionimage" width="12%" src="https://clearlakeschools.org/wp-content/uploads/2017/02/Charging-Lion-sm.png" />
         <!--this is the lion image above the title clhs recccords-->
-        <h1>{{table}}.</h1>
+        <h1>{{table}}</h1>
         <!--discription in middle of page describing-->
         <div class="navigation">
             <nav>

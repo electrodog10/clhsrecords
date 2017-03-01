@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, render_template, redirect, url_for, request
 from wtforms import Form, StringField, validators, SelectField
 from app import compute
 from app import app
@@ -30,6 +30,17 @@ def index():
         return render_template("view_output.html", form=form, table=table)
     else:
         return render_template("view_input.html", form=form)
+
+#login
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    error = None
+    if request.method == 'POST':
+        if request.form['username'] != 'admin' or request.form['password'] != 'admin':
+            error = 'Invalid Credentials. Please try again.'
+        else:
+            return redirect(url_for('index'))
+    return render_template('login.html', error=error)
 
 if __name__ == '__main__':
     app.run(debug=True)
