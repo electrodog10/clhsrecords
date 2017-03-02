@@ -9,7 +9,7 @@ app.config['SECRET_KEY'] = '7d441f27d441f37567d441f2b6176a'
 
 # Send form
 class Form(Form):
-    r = StringField(validators=[validators.InputRequired()])
+    viewingForm = StringField(validators=[validators.InputRequired()])
     option = SelectField('Options', choices=[('1','Name'),('2','Activity'),('3','Year'), ('4','Records')])
 
 
@@ -25,7 +25,7 @@ def index():
         r = form.r.data
         option = form.option.data
         print(option)
-        table = compute.compute(r,option)
+        table = compute.compute(viewingForm,option)
 
         return render_template("view_output.html", form=form, table=table)
     else:
@@ -41,6 +41,9 @@ def login():
         else:
             return redirect(url_for('index'))
     return render_template('login.html', error=error)
+
+#editing
+
 
 if __name__ == '__main__':
     app.run(debug=True)
