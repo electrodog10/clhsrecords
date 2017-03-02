@@ -10,7 +10,7 @@ app.config['SECRET_KEY'] = '7d441f27d441f37567d441f2b6176a'
 # Send form
 class Form(Form):
     viewingForm = StringField(validators=[validators.InputRequired()])
-    option = SelectField('Options', choices=[('1','Name'),('2','Activity'),('3','Year'), ('4','Records')])
+    viewingOption = SelectField('Options', choices=[('1','Name'),('2','Activity'),('3','Year'), ('4','Records')])
 
 
 
@@ -22,10 +22,9 @@ def index():
     form = Form(request.form)
 
     if request.method == 'POST' and form.validate():
-        r = form.r.data
-        option = form.option.data
-        print(option)
-        table = compute.compute(viewingForm,option)
+        viewingForm = form.viewingForm.data
+        viewingOption = form.viewingOption.data
+        table = compute.compute(viewingForm,viewingOption)
 
         return render_template("view_output.html", form=form, table=table)
     else:
