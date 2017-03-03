@@ -20,13 +20,11 @@ class Form(Form):
 @app.route('/index')
 def index():
     form = Form(request.form)
-
     if request.method == 'POST' and form.validate():
         viewingForm = form.viewingForm.data
         viewingOption = form.viewingOption.data
-        table = compute.compute(viewingForm,viewingOption)
-
-        return render_template("view_output.html", form=form, table=table)
+        items = compute.compute(viewingForm,viewingOption)
+        return render_template("view_output.html", form=form, items=items)
     else:
         return render_template("view_input.html", form=form)
 

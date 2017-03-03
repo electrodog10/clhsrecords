@@ -31,15 +31,15 @@
         <h1 align="center">Please login</h1>
         <br>
         <form action="" method="post" align="center">
-        <input type="text" placeholder="Username" name="username" value="{{
-          request.form.username }}">
-         <input type="password" placeholder="Password" name="password" value="{{
-          request.form.password }}">
-        <input class="btn btn-default" type="submit" value="Login">
-          </form>
+            <input type="text" placeholder="Username" name="username" value="{{
+              request.form.username }}">
+             <input type="password" placeholder="Password" name="password" value="{{
+              request.form.password }}">
+            <input class="btn btn-default" type="submit" value="Login">
+        </form>
         {% if error %}
          <p class="error"><strong>Error:</strong> {{ error }}
-             {% endif %}
+        {% endif %}
         <!--discription in middle of page describing-->
         <div class="navigation">
             <nav>

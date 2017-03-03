@@ -1,8 +1,5 @@
-
-
 <!DOCTYPE html>
 <html>
-
 <head>
     <!--under the black menu line in large text saying CLHS Records-->
     <title>CLHS Records</title>
@@ -19,32 +16,28 @@
             <form method=post action="">
             <form class="form-wrapper">
                 {{ form.viewingForm }}
-               
                 {{ form.viewingOption (class_="radio-inline") }}
-                
                 <input type="submit" value="Search" a href="#" />
-
             </form>
-                <form action="{{ url_for('login') }}">
-        <input type="submit" value="Login">
-        </form>
+            <form action="{{ url_for('login') }}">
+                <input type="submit" value="Login">
+            </form>
         </div>
-        </div>
-        <img class="lionimage" width="12%" src="https://clearlakeschools.org/wp-content/uploads/2017/02/Charging-Lion-sm.png" />
-        <!--this is the lion image above the title clhs records-->
-        <h1>Welcome to the Clear Lake Schools Record Page. </h1>
-        <!--discription in middle of page describing-->
-        <div class="navigation">
-            <nav>
-                <ul>
-                    <li><a href="#"><b> Clear Lake Athletics </b></a></li>
-                    <li><a href="http://clearlakeschools.org/about/"><b> About Clear Lake District </b></a></li>
-                </ul>
+    </div>
+    <img class="lionimage" width="12%" src="https://clearlakeschools.org/wp-content/uploads/2017/02/Charging-Lion-sm.png" />
+    <!--this is the lion image above the title clhs records-->
+    <h1>Welcome to the Clear Lake Schools Record Page. </h1>
+    <!--discription in middle of page describing-->
+    <div class="navigation">
+        <nav>
+            <ul>
+                <li><a href="#"><b> Clear Lake Athletics </b></a></li>
+                <li><a href="http://clearlakeschools.org/about/"><b> About Clear Lake District </b></a></li>
+            </ul>
                 <div class="contact-btn">
                     <a href="mailto:hluker18@clearlakeschools.org">Contact</a>
                 </div>
-            </nav>
-        </div>
+        </nav>
+    </div>
 </body>
-
 </html>
